@@ -141,4 +141,9 @@ export const componentMappings: ComponentMapping[] = [
     selector: 'unraid-test-theme-switcher',
     appId: 'test-theme-switcher',
   },
+  {
+    component: defineAsyncComponent(() => import('../Docker/DockerContainerOverview.standalone.vue')),
+    selector: 'unraid-docker-container-overview',
+    appId: 'docker-container-overview',
+  },
 ];
